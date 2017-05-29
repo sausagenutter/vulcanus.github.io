@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vulcan Designs</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/animatedresponsiveimagegrid/css/style.css" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="bower_components/animatedresponsiveimagegrid/css/fallback.css" />
+    </noscript>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link href="bower_components/animatedresponsiveimagegrid/css/fallback.css" rel="stylesheet">
+    <![endif]-->
+    <style>
+        #port{
+            height: 700px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bower_components/animatedresponsiveimagegrid/js/jquery.gridrotator.js/" type="text/javascript"></script>
+    <script type="text/javascript" src="bower_components/animatedresponsiveimagegrid/js/modernizr.custom.26633.js"></script>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><!--header-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-scroll class="head-link" href="#">COMPANY</a></li>
+                    <li><a data-scroll class="head-link" href="#">PORTFOLIO</a></li>
+                    <li><a data-scroll class="head-link" href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--LOGO-->
+    <div class="logo">
+        <img src="image/vulcanus.png">
+    </div>
+    <div class="container">
+        <!--company-->
+        <div class="row">
+
+        </div>
+        <!--portfolio-->
+        <div class="row">
+            <div class="col-lg-12" id="port">
+            <div id="ri-grid" class="ri-grid1 ri-grid-size-2">
+                <img class="ri-loading-image" src="http://tympanus.net/Development/AnimatedResponsiveImageGrid/images/loading.gif">
+                <ul>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-02.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-04.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-05.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-06.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-07.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-11.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/big-3.jpg" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/big-4.jpg" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/big-6.jpg" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-07.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-02.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-05.png" alt="Whatever works"/></a></li>
+                    <li><a href="#"><img src="image/portfolio/Star_wars_longshadow-11.png" alt="Whatever works"/></a></li>
+                    <!--...-->
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+
+            $( '#ri-grid' ).gridrotator( {
+                rows		: 3,
+                columns		: 3,
+                animType	: 'fadeInOut',
+                animSpeed	: 1000,
+                interval	: 600,
+                step		: 1,
+                w320		: {
+                    rows	: 3,
+                    columns	: 3
+                },
+                w240		: {
+                    rows	: 3,
+                    columns	: 3
+                }
+            } );
+
+        });
+    </script>
+</body>
+</html>
